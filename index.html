@@ -16,9 +16,9 @@
   <script type="text/javascript">
     Parse.initialize("FdcutJlxnyxUBlmJgmFqGwYQQQ5YwJvI5Uqiy8Lc", "OpT23fzX6TEKj0RvNtlojebPkghGNJ40JZrRv4B3");
     
-    var Visit = Parse.Object.extend("Visit");
-    var visit = new Visit();
-      visit.save({visit: "true"}, {
+    var PageView = Parse.Object.extend("PageView");
+    var pageView = new PageView();
+      pageView.save({visit: "true"}, {
       success: function(object) {
         $(".success").show();
       },
