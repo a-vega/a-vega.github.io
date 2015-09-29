@@ -2,8 +2,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Parse App</title>
-  <meta name="description" content="My Parse App">
+  <title>AVega</title>
+  <meta name="description" content="AVega">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -16,9 +16,9 @@
   <script type="text/javascript">
     Parse.initialize("FdcutJlxnyxUBlmJgmFqGwYQQQ5YwJvI5Uqiy8Lc", "OpT23fzX6TEKj0RvNtlojebPkghGNJ40JZrRv4B3");
     
-    var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
-      testObject.save({foo: "bar"}, {
+    var Visit = Parse.Object.extend("Visit");
+    var visit = new Visit();
+      visit.save({visit: "true"}, {
       success: function(object) {
         $(".success").show();
       },
